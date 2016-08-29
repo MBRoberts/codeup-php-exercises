@@ -10,16 +10,16 @@ if (($x < $y) && ($y < $z)) {
 }
 
 // TODO:
-if ((0 < $x)|| ($x < 10)) {
+if ((0 < $x) || ($x < 10)) {
 	echo "0 is less than {$x} OR {$x} is less than 10" . PHP_EOL;
 }
 
 // TODO:
-if ((0 < $y)|| ($y < 10)) {
+if ((0 < $y) || ($y < 10)) {
 	echo "0 is less than {$y} OR {$y} is less than 10" . PHP_EOL;
 }
 
-if ((0 < $z)|| ($z < 10)) {
+if ((0 < $z) || ($z < 10)) {
 	echo "0 is less than {$z} OR {$z} is less than 10" . PHP_EOL;
 }
 // TODO:
