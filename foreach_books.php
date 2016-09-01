@@ -30,10 +30,11 @@ $books = [
 
 foreach ($books as $title => $data) {
 //	if ($data['published'] > 1950) {
-		echo "\n\033[34m{$title}:\033[33m\n";
+		echo "\n\033[32m\xe2\x98\x98\e[36m {$title}:\033[0m\n";
 		foreach ($data as $key => $info) {
 			echo "\t{$key}: {$info}\n";
 		}
+
 		echo PHP_EOL;
 //	}
 }
