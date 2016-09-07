@@ -30,10 +30,8 @@ function attachKeys($array)
 	foreach ($newArray as $index => $employee) {
 		$newArray[$index]["Full Name"] = $newArray[$index]["First Name"] . " " . $newArray[$index]["Last Name"];
 	}
-	$mask = "\t\t\t\t||  %5.5s  |   %-10s  |  %15s  ||\n";
-	echo "\t\t\t\t------------------------------------------------\n";
-	printf($mask, "UNITS", "FULL NAME", "EMPLOYEE NUMBER");
-	echo "\t\t\t\t------------------------------------------------\n";	
+	print_r($newArray);
+	
 }
 
 $employeeArray = getContent('sales-report.txt');
