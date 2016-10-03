@@ -11,7 +11,7 @@ class Rectangle
 	public function __construct($height,$width)
 	{
 		$this->setHeight($height);
-		$this->setWidth($width);
+		$this->scandir(directory)etWidth($width);
 	}
 
 	private function setHeight($height)

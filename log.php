@@ -25,11 +25,6 @@ class Log
 		$this->handle = fopen($this->filename, 'a');
 	}
 
-	public function __destruct()
-	{
-		fclose($this->handle);
-	}
-
 	private function logMessage($level, $msg)
 	{
 		fwrite($this->handle, date('Y-n-d h:i:s A ') . "[{$level}] " . $msg . PHP_EOL . PHP_EOL);
@@ -43,6 +38,11 @@ class Log
 	public function error($msg)
 	{
 		$this->logMessage("ERROR", $msg);
+	}
+	
+	public function __destruct()
+	{
+		fclose($this->handle);
 	}
 }
 
